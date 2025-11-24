@@ -21,5 +21,5 @@ while guesses <= guess_limit:
 if guesses <= guess_limit:
     print("\nYou have guessed the correct number.")
 else:
-    print("\nYou have failed to guess\n"
-          "The correct number was: ", random_number)
+    print("\nYou have failed to guess the correct number.\n"
+          "The number was: ", random_number)
