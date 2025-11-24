@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the name of the weak zone of the earth’s crust?",
+    "alternatives": [
+      "Seismic",
+      "Cosmic",
+      "Formic",
+      "Anaemic"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Where was India’s first national Museum opened?",
+    "alternatives": [
+      "Delhi",
+      "Kolkata",
+      "Mumbai",
+      "Hyderabad"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "The green planet in the solar system is?",
+    "alternatives": [
+      "Mars",
+      "Uranus",
+      "Venus",
+      "Earth"
+    ],
+    "correct_answer": 2
+  }
+]
