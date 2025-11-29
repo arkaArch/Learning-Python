@@ -2,7 +2,7 @@ import modules.functions as fns
 import FreeSimpleGUI as sg
 
 todos_from_file = fns.get_todos_from_file()
-
+sg.theme("GreenMono")
 layout = [[sg.Text("Type in a todo: ")],
           [sg.Input(key="to_do_input"), sg.Button("Add")],
           [sg.Listbox(values=[todo.strip("\n") for todo in todos_from_file],
