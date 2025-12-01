@@ -1,0 +1,4 @@
+The command to make executable in Windows and Linux is:
+"pyinstaller --onefile --windowed --clean gui_main.py"
+
+It creates an executable file in a separate "dist" folder.
