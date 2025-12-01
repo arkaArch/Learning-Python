@@ -1,2 +1,6 @@
-FreeSimpleGUI 5.2.0.post1
-pip           25.1.1
+altgraph==0.17.5
+FreeSimpleGUI==5.2.0.post1
+packaging==25.0
+pyinstaller==6.17.0
+pyinstaller-hooks-contrib==2025.10
+setuptools==80.9.0
