@@ -1,15 +1,23 @@
 import modules.functions as fns
 import FreeSimpleGUI as sg
+import os
+
+# Check if todos.txt file in the directory, if not create it
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", "w") as file:
+        # We basically do not try to write anything in todos.txt
+        # But 'with' needs some operation to execute, so pass
+        pass
 
 todos_from_file = fns.get_todos_from_file()
 sg.theme("GreenMono")
 layout = [[sg.Text("Type in a todo: ")],
-          [sg.Input(key="to_do_input"), sg.Button("Add")],
+          [sg.Input(key="to_do_input"), sg.Button("Add", mouseover_colors="#2d8a69")],
           [sg.Listbox(values=[todo.strip("\n") for todo in todos_from_file],
-                      key="todos",
-                      enable_events=True,
-                      size=(45, 10))],
-          [sg.Button("Edit"), sg.Button("Complete"), sg.Push(), sg.Button("Exit")]]
+                      key="todos", enable_events=True, size=(45, 10))],
+          [sg.Button("Edit", mouseover_colors="#2d8a69"),
+           sg.Button("Complete", mouseover_colors="#2d8a69"),
+           sg.Push(), sg.Button("Exit", mouseover_colors="#2d8a69")]]
 
 window = sg.Window("Todo app",
                    layout,
